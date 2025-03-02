@@ -32,6 +32,10 @@
         </developer>
     </developers>
 
+    <modules>
+        <module>derivora-testing-data-support</module>
+    </modules>
+
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
         <maven.compiler.version>3.13.0</maven.compiler.version>

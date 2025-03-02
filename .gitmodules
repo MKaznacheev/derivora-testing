@@ -1,0 +1,3 @@
+[submodule "derivora-testing-data-support"]
+	path = derivora-testing-data-support
+	url = https://github.com/MKaznacheev/derivora-testing-data-support.git
