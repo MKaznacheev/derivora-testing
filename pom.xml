@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>xyz.derivora</groupId>
+    <artifactId>derivora-testing</artifactId>
+    <version>0.0.0</version>
+    <packaging>pom</packaging>
+    <name>Derivora Testing</name>
+    <description>Testing module for Derivora project</description>
+    <url>https://github.com/MKaznacheev/derivora-testing.git</url>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/lgpl-3.0.html</url>
+            <distribution>repo</distribution>
+            <comments>
+                This project is licensed under the GNU Lesser General Public License v3.0.
+                See the LICENSE file for more details.
+            </comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>MKaznacheev</id>
+            <name>Matvei Kaznacheev</name>
+            <email>kaznacheev.ma@gmail.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.version>3.13.0</maven.compiler.version>
+        <jupiter.api.version>5.11.3</jupiter.api.version>
+        <jupiter.engine.version>5.11.3</jupiter.engine.version>
+        <jupiter.params.version>5.11.3</jupiter.params.version>
+        <junit.launcher.version>1.11.3</junit.launcher.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${jupiter.api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${jupiter.engine.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${jupiter.params.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>${junit.launcher.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <directory>${project.basedir}/target</directory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
