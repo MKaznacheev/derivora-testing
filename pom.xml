@@ -6,7 +6,7 @@
 
     <groupId>xyz.derivora</groupId>
     <artifactId>derivora-testing</artifactId>
-    <version>0.0.0</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
     <name>Derivora Testing</name>
     <description>Testing module for Derivora project</description>
@@ -43,9 +43,22 @@
         <jupiter.engine.version>5.11.3</jupiter.engine.version>
         <jupiter.params.version>5.11.3</jupiter.params.version>
         <junit.launcher.version>1.11.3</junit.launcher.version>
+        <derivora.core.version>0.7.0</derivora.core.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>xyz.derivora</groupId>
+                <artifactId>derivora-core</artifactId>
+                <version>${derivora.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
