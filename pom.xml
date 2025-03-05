@@ -69,20 +69,22 @@
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${jupiter.engine.version}</version>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${jupiter.params.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${jupiter.params.version}</version>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${jupiter.engine.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <version>${junit.launcher.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
